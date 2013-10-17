@@ -1,0 +1,342 @@
+2013/10/15 05:40:13 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'UTC' for '8.0/no DST' instead (C:\Documents\Projects\web\yii\protected\views\layouts\main.php:51)
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 C:\Documents\Projects\web\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 C:\Documents\Projects\web\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 C:\Documents\Projects\web\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 C:\Documents\Projects\web\yii\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(126): require()
+#8 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\Documents\Projects\web\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 C:\Documents\Projects\web\yii\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\Documents\Projects\web\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\Documents\Projects\web\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\Documents\Projects\web\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 C:\Documents\Projects\web\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Documents\Projects\web\yii\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\Documents\Projects\web\yii\protected\views\layouts\main.php (51)
+in C:\Documents\Projects\web\yii\protected\views\layouts\column1.php (6)
+in C:\Documents\Projects\web\yii\protected\controllers\SiteController.php (32)
+2013/10/15 08:03:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'track.users' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `users`.
+in C:\Documents\Projects\web\yii\index.php (13)
+2013/10/16 02:09:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Product".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Product')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=Product
+---
+2013/10/16 03:52:52 [error] [exception.CException] exception 'CException' with message 'Property "Users.id" is not defined.' in C:\Documents\Projects\web\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\Documents\Projects\web\yii\protected\components\UserIdentity.php(30): CActiveRecord->__get('id')
+#2 C:\Documents\Projects\web\yii\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\Documents\Projects\web\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\Documents\Projects\web\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\Documents\Projects\web\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\Documents\Projects\web\yii\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\Documents\Projects\web\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\Documents\Projects\web\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Documents\Projects\web\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://yii/index.php?r=site/login
+---
+2013/10/17 01:01:44 [error] [exception.CException] exception 'CException' with message 'Property "Products.src" is not defined.' in C:\Documents\Projects\web\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('src')
+#1 C:\Documents\Projects\web\yii\protected\views\products\_view.php(12): CActiveRecord->__get('src')
+#2 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(130): require('C:\Documents\Pr...')
+#3 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Documents\Pr...', Array, false)
+#4 C:\Documents\Projects\web\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\Documents\Pr...', Array)
+#5 C:\Documents\Projects\web\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\Documents\Projects\web\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#8 C:\Documents\Projects\web\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 C:\Documents\Projects\web\yii\protected\views\products\index.php(28): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(126): require('C:\Documents\Pr...')
+#12 C:\Documents\Projects\web\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Documents\Pr...', Array, true)
+#13 C:\Documents\Projects\web\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Documents\Pr...', Array, true)
+#14 C:\Documents\Projects\web\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\Documents\Projects\web\yii\protected\controllers\ProductsController.php(135): CController->render('index', Array)
+#16 C:\Documents\Projects\web\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#17 C:\Documents\Projects\web\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products')
+#27 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php?r=products
+---
+2013/10/17 02:31:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/admin')
+#9 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=products/admin
+---
+2013/10/17 02:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asdmin".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('asdmin')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('asdmin')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/asdmin')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=products/asdmin
+---
+2013/10/17 02:32:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/admin')
+#9 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=products/admin
+---
+2013/10/17 02:41:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/admin')
+#9 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=products/admin
+HTTP_REFERER=http://yii/index.php?r=products
+---
+2013/10/17 03:20:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('disable')
+#8 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/disabl...')
+#9 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=products/disable
+---
+2013/10/17 03:31:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Documents\Projects\web\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('disable')
+#9 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/disabl...')
+#10 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=products/disable
+---
+2013/10/17 07:04:39 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.SimpleHTMLDOM.SimpleHTMLDOM" is invalid. Make sure it points to an existing directory or file.' in C:\Documents\Projects\web\yii\framework\YiiBase.php:347
+Stack trace:
+#0 C:\Documents\Projects\web\yii\protected\controllers\ProductsController.php(166): YiiBase::import('extensions.Simp...')
+#1 C:\Documents\Projects\web\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionCheckURL()
+#2 C:\Documents\Projects\web\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('checkurl')
+#11 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/checku...')
+#12 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=products/checkurl
+---
+2013/10/17 07:04:49 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.SimpleHTMLDOM.SimpleHTMLDOM" is invalid. Make sure it points to an existing directory or file.' in C:\Documents\Projects\web\yii\framework\YiiBase.php:347
+Stack trace:
+#0 C:\Documents\Projects\web\yii\protected\controllers\ProductsController.php(166): YiiBase::import('extensions.Simp...')
+#1 C:\Documents\Projects\web\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionCheckURL()
+#2 C:\Documents\Projects\web\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('checkurl')
+#11 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/checku...')
+#12 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=products/checkurl
+---
+2013/10/17 07:05:24 [error] [exception.CException] exception 'CException' with message 'Alias "exte.SimpleHTMLDOM.SimpleHTMLDOM" is invalid. Make sure it points to an existing directory or file.' in C:\Documents\Projects\web\yii\framework\YiiBase.php:347
+Stack trace:
+#0 C:\Documents\Projects\web\yii\protected\controllers\ProductsController.php(166): YiiBase::import('exte.SimpleHTML...')
+#1 C:\Documents\Projects\web\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionCheckURL()
+#2 C:\Documents\Projects\web\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\Documents\Projects\web\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\Documents\Projects\web\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\Documents\Projects\web\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\Documents\Projects\web\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\Documents\Projects\web\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\Documents\Projects\web\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('checkurl')
+#11 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/checku...')
+#12 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=products/checkurl
+---
+2013/10/17 15:36:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in H:\OpenServer\domains\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 H:\OpenServer\domains\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 H:\OpenServer\domains\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 H:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 H:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 H:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(1455): CActiveRecord->getCommandBuilder()
+#7 H:\OpenServer\domains\yii\protected\components\UserIdentity.php(23): CActiveRecord->find('LOWER(login)=?', Array)
+#8 H:\OpenServer\domains\yii\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#9 H:\OpenServer\domains\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 H:\OpenServer\domains\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 H:\OpenServer\domains\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 H:\OpenServer\domains\yii\protected\controllers\SiteController.php(94): CModel->validate()
+#13 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#14 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 H:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#18 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://yii/index.php?r=site/login
+---
+2013/10/17 16:53:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=products/track
+---
+2013/10/17 17:10:07 [error] [exception.RussianPostArgumentException] exception 'RussianPostArgumentException' with message 'Incorrect format of tracking number: 0' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:65
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(201): RussianPostAPI->getOperationHistory(0)
+#1 [internal function]: ProductsController->actionTrack('RB184875349CN')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=products/track&id=RB184875349CN
+---
+2013/10/17 17:11:31 [error] [exception.RussianPostArgumentException] exception 'RussianPostArgumentException' with message 'Incorrect format of tracking number: 1' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:65
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(201): RussianPostAPI->getOperationHistory('1')
+#1 [internal function]: ProductsController->actionTrack('1')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=products/track&id=1
+---
+2013/10/17 17:11:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=products/track
+---
