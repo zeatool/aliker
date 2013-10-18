@@ -3,13 +3,9 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Products',
+	'Треки',
 );
 
-$this->menu=array(
-	array('label'=>'Create Products', 'url'=>array('create')),
-	array('label'=>'Manage Products', 'url'=>array('admin')),
-);
 ?>
 <script src="js/track.js"></script>
 <script>

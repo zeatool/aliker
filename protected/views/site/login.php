@@ -3,17 +3,21 @@
 /* @var $model LoginForm */
 /* @var $form CActiveForm  */
 
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
+$this->pageTitle=Yii::app()->name . ' - Вход';
 ?>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
 
-<h1>Login</h1>
+    .form-my {
+      margin-left: 20px;
+      float:left;
+    }
 
-<p>Please fill out the following form with your login credentials:</p>
+</style>
 
-<div class="form">
+<h1>Пожалуйста войдите</h1>
+
+<div class="form-my">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
@@ -21,8 +25,6 @@ $this->breadcrumbs=array(
 		'validateOnSubmit'=>true,
 	),
 )); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'username'); ?>
@@ -34,9 +36,6 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
 	</div>
 
 	<div class="row rememberMe">
@@ -46,8 +45,11 @@ $this->breadcrumbs=array(
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
+		<?php echo CHtml::submitButton('Войти',array('class'=>'btn btn-large btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
+<div>
+    <img src="i/0.jpeg" width="200">
+</div>

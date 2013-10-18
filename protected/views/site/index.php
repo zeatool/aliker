@@ -1,20 +1,14 @@
 <?php
 /* @var $this SiteController */
-
-$this->pageTitle=Yii::app()->name;
+$this->pageTitle="Отслеживание посылок с aliexpress";
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h1>Вы попали на <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+<p>Данный сайт предназначен для отслеживания посылок с сайта <a href="http://aliexpress.com">Алиэкспресс</a>.<br>
+На данный момент посылки отслеживаются только те, что были отправленны Почтой России</p>
+<p>Если вы заказываете товары с aliexpress, то наверняка знаете, что практически все посылки имеют трекинговый номер<br>
+по которому вы можете отследить ваши товары. На данный момент существует множество сайтов, которые позволяют отслеживать состояние посылки <br>
+исклюительно по трекинговому номеру, однако если вы заказываете одновременно несколько товаров, то можете запутаться в номерах и не сразу понять<br>
+где какая посылка. Данный сайт привязывает ваши номера к товарам с aliexpress, а так же имеет автоматическое обновление трека вашей посылки.</p>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>

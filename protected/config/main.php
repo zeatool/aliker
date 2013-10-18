@@ -5,10 +5,12 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Aliker',
-
+    'theme'=>'bootstrap',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -22,7 +24,9 @@ return array(
 		// uncomment the following to enable the Gii tool
 
 		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
+            'generatorPaths'=>array(
+                'bootstrap.gii',),
+                'class'=>'system.gii.GiiModule',
 			'password'=>'603548',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
@@ -36,7 +40,11 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		// uncomment the following to enable URLs in path-format
+        'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+        ),
+
+        // uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
@@ -58,7 +66,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=track',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => '603548',
 			'charset' => 'utf8',
 		),
 

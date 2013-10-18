@@ -3,10 +3,10 @@
 
 $this->pageTitle=Yii::app()->name . ' - About';
 $this->breadcrumbs=array(
-	'About',
+	'О проекте',
 );
 ?>
-<h1>About</h1>
+<h1>О проекте</h1>
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <code><?php echo __FILE__; ?></code>.</p>
+<p>Данный проект абсолютно бесплатный, если хотите поддержать проект:</p>
+<p><b>Яндекс деньги:</b> 410011495878160 </p>
