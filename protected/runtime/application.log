@@ -410,3 +410,485 @@ Stack trace:
 REQUEST_URI=/index.php?r=products
 HTTP_REFERER=http://yii/index.php?r=user
 ---
+2013/10/18 08:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/bootstrap-responsive.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/main.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/admin.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootbox...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootbox.min.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/bootstrap.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "i".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('i')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('i')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/i/lg2.png')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/i/lg2.png
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/jquery.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootbox...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootbox.min.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://yii/index.php/site/index
+---
+2013/10/18 08:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/admin.css
+HTTP_REFERER=http://yii/index.php/site/index
+---
+2013/10/18 08:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/main.css
+HTTP_REFERER=http://yii/index.php/site/index
+---
+2013/10/18 08:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootbox...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootbox.min.js
+HTTP_REFERER=http://yii/index.php/site/index
+---
+2013/10/18 08:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/bootstrap-responsive.css
+HTTP_REFERER=http://yii/index.php/site/index
+---
+2013/10/18 08:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/bootstrap.css
+HTTP_REFERER=http://yii/index.php/site/index
+---
+2013/10/18 08:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/main.css".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/18 08:33:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/main.css".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/18 08:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/js/bootstrap.min.js".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/js/bo...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstrap.css".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/b...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/bootstrap/css/bootstrap.css
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/main.css".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/bootstrap/css/main.css
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/jquery.js".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/jquer...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/bootstrap/jquery.js
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "i/lg2.png".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('i/lg2.png')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/i/lg2.png
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootbox.min.js".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/bootbox.min....')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/js/bootbox.min.js
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB184875349CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB18487534...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB184875349CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/admin.css".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/a...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/bootstrap/css/admin.css
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB387935299CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB38793529...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB387935299CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/track.js".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/track.js')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/js/track.js
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/css/bootstrap-responsive.css".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/b...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/bootstrap/css/bootstrap-responsive.css
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB688847642CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB68884764...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB688847642CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB461265625CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB46126562...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB461265625CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB851222096CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB85122209...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB851222096CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB559548396CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB55954839...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB559548396CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "bootstrap/js/bootstrap.min.js".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/js/bo...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB869070087CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB86907008...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB869070087CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "data/RB786959096CN.jpg".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('data/RB78695909...')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/data/RB786959096CN.jpg
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootbox.min.js".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/bootbox.min....')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/js/bootbox.min.js
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/track.js".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/track.js')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/js/track.js
+HTTP_REFERER=http://yii/index.php/products
+---
+2013/10/18 08:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/bootstrap-responsive.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/bootstrap.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/admin.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/css/main.css
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootbox...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/js/bootbox.min.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "i".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('i')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('i')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/i/lg2.png')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/i/lg2.png
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/jquery.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bootstrap".' in C:\Documents\Projects\web\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CController.php(270): CController->missingAction('bootstrap')
+#1 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(282): CController->run('bootstrap')
+#2 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bootstrap/...')
+#3 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/bootstrap/js/bootstrap.min.js
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
+2013/10/18 08:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Documents\Projects\web\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Documents\Projects\web\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\Documents\Projects\web\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Documents\Projects\web\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/index.php/site/page?view=about
+---
