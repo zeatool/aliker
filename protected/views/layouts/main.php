@@ -43,7 +43,7 @@
                 'items'=>array(
                     array('label'=>Yii::app()->user->name,'icon'=>'user white', 'url'=>array('/products'), 'visible'=>!Yii::app()->user->isGuest,
                     'items'=>array(
-                        array('label'=>'Аккаунт','url'=>'#'),
+                        array('label'=>'Информация','url'=>'#'),
                         '---',
                         array('label'=>'Выйти','url'=>array('/site/logout')),
                     )),
