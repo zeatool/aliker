@@ -66,7 +66,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=track',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '603548',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 
