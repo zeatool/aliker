@@ -13,12 +13,17 @@ return array(
     'theme'=>'bootstrap',
 	// preloading 'log' component
 	'preload'=>array('log'),
+    'sourceLanguage' => 'en',
+    'language' => 'ru',
 
-	// autoloading model and component classes
+
+    // autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
-	),
+        'application.modules.user.models.*',
+        'application.modules.user.components.*',
+    ),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
@@ -31,15 +36,49 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+        'user'=>array(
+            # encrypting method (php hash function)
+            'hash' => 'md5',
 
-	),
+            # send activation email
+            'sendActivationMail' => true,
+
+            # allow access for non-activated users
+            'loginNotActiv' => false,
+
+            # activate user on registration (only sendActivationMail = false)
+            'activeAfterRegister' => false,
+
+            # automatically login from registration
+            'autoLogin' => true,
+
+            # registration path
+            'registrationUrl' => array('/user/registration'),
+
+            # recovery password path
+            'recoveryUrl' => array('/user/recovery'),
+
+            # login form path
+            'loginUrl' => array('/user/login'),
+
+            # page after login
+            'returnUrl' => array('/user/profile'),
+
+            # page after logout
+            'returnLogoutUrl' => array('/user/login'),
+        ),
+
+
+    ),
 
 	// application components
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-		),
+            'class' => 'WebUser',
+            'allowAutoLogin'=>true,
+            'loginUrl' => array('/user/login'),
+        ),
         'bootstrap'=>array(
             'class'=>'bootstrap.components.Bootstrap',
         ),
@@ -48,6 +87,7 @@ return array(
 
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+            'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -63,6 +103,7 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
+            'tablePrefix'=>'',
 			'connectionString' => 'mysql:host=localhost;dbname=track',
 			'emulatePrepare' => true,
 			'username' => 'root',

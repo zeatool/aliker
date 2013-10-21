@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="bootstrap/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/bootbox.min.js"></script>
+    <script src="<?php echo Yii::app()->getBaseUrl(true);?>/bootstrap/jquery.js"></script>
+    <script src="<?php echo Yii::app()->getBaseUrl(true);?>/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo Yii::app()->getBaseUrl(true);?>/js/bootbox.min.js"></script>
     <script>
         function track(id)
         {
@@ -27,27 +27,27 @@
         }
     </script>
     <!-- Le styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/main.css" rel="stylesheet">
-    <link href="bootstrap/css/admin.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-
+    <link href="<?php echo Yii::app()->getBaseUrl(true);?>/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->getBaseUrl(true);?>/bootstrap/css/main.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->getBaseUrl(true);?>/bootstrap/css/admin.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->getBaseUrl(true);?>/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 <body>
 <div id="wrap">
 <div class="masthead">
         <div class="container">
-        <div style="float: left;"><img width="100" src="i/lg2.png"></div>
+        <div style="float: left;"><img width="100" src="<?php echo Yii::app()->getBaseUrl(true);?>/i/lg2.png"></div>
         <div class="masthead-top clearfix">
 
             <?php $this->widget('bootstrap.widgets.TbMenu',array(
                 'items'=>array(
-                    array('label'=>Yii::app()->user->name,'icon'=>'user white', 'url'=>array('/products'), 'visible'=>!Yii::app()->user->isGuest,
+                    array('label'=>Yii::app()->user->name,'icon'=>'user white', 'url'=>array('/products'), 'visible'=>!Yii::app()->user->isGuest,'class'=>'btn',
                     'items'=>array(
-                        array('label'=>'Информация','url'=>'#'),
+                        array('label'=>'Информация','url'=>'/user/profile'),
                         '---',
                         array('label'=>'Выйти','url'=>array('/site/logout')),
                     )),
-                    array('label'=>'Войти','icon'=>'user white', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                    array('label'=>'Войти','icon'=>'user white', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
+                    array('label'=>'Регистрация', 'icon'=>'arrow-right white','url'=>array('/user/registration'), 'visible'=>Yii::app()->user->isGuest),
                 ),
                 'htmlOptions'=>array('class'=>'nav-pills pull-right')
             )); ?>
