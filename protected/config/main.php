@@ -89,6 +89,8 @@ return array(
 			'urlFormat'=>'path',
             'showScriptName'=>false,
 			'rules'=>array(
+                'products/view/<id:\w+>'=>'products/view',
+                'products/track/<id:\w+>'=>'products/track',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -107,7 +109,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=track',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '603548',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 
@@ -136,6 +138,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'noreply@aliker.ru',
 	),
 );

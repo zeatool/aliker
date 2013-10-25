@@ -7,15 +7,16 @@
     function check(){
         $.ajax({
             type:"POST",
-            url: "index.php?r=products/checkurl",
+            url: curl+"/products/checkurl",
             data: "link="+$("#Products_link").val()+"&code="+$("#Products_track_id").val(),
             dataType: 'json',
-            beforeSend: function(){$('#img_div').html("<img width=200 src='i/656297.gif'>");},
+            beforeSend: function(){$('#img_div').html("<img width=200 src='"+curl+"/i/656297.gif'>");},
             success: function(data){
                 $('#Products_title').val(data.title);
                 $('#Products_img').val(data.img);
-                $('#img_div').html("<img width=200 src='"+data.img+"'>");
-
+                $('#img_div').html("<img width=200 src='"+curl+'/'+data.img+"'>");
+                if (data.id)
+                    $('#store_id').val(data.id);
             }
         });
     }
@@ -29,7 +30,7 @@
 )); ?>
 
 	<p class="note">Поля отмеченные <span class="required">*</span> обязательны.</p>
-
+    <input type="hidden" value="0" name="Products[store_id]" id="store_id">
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
