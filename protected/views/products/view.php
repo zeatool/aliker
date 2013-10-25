@@ -15,19 +15,29 @@ $this->menu=array(
 	array('label'=>'Manage Products', 'url'=>array('admin')),
 );
 ?>
-
-<h1>View Products #<?php echo $model->track_id; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
+<style>
+    .product_img{float:left;}
+</style>
+<h1>Трек #<?php echo $model->track_id; ?></h1>
+<div class="product_img">
+    <img src="<?php print Yii::app()->createUrl($model->img); ?>" width="200">
+</div>
+<div style="float:right; max-width: 940px;">
+<?php
+$store = $model->store_id ? "<a href='".$model->store->link."'>".$model->store->title."</a>" : "-";
+$this->widget('bootstrap.widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'track_id',
 		'title',
-		'img',
+        array(
+            'label'=>'Магазин',
+            'type'=>'raw',
+            'value'=>$store,
+        ),
 		'link',
 		'date_upd',
 		'last_state',
-        'store_id',
-		'disabled',
 	),
 )); ?>
+</div>

@@ -49,6 +49,7 @@ class Products extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            'store' => array(self::HAS_ONE,'Store','store_id'),
 		);
 	}
 

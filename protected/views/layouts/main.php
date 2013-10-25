@@ -78,6 +78,7 @@
                                       array('label'=>'Добавить трек','url'=>array('/products/create')),
                                     )
                                 ),
+                                array('label'=>'Магазины', 'icon'=>'briefcase', 'url'=>array('/store'), 'visible'=>!Yii::app()->user->isGuest),
                                 array('label'=>'О проекте', 'url'=>array('/site/page', 'view'=>'about')),
                             )
                         )); ?>
