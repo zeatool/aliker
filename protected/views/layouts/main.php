@@ -11,13 +11,14 @@
     <script src="<?php echo Yii::app()->getBaseUrl(true);?>/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?php echo Yii::app()->getBaseUrl(true);?>/js/bootbox.min.js"></script>
     <script>
+        var curl='<?php echo Yii::app()->getBaseUrl(true);?>';
         function track(id)
         {
             $.ajax({
                 type:"GET",
-                url: "index.php?r=products/track&id="+id,
+                url: curl+"/products/track/"+id,
                 beforeSend: function(){
-                    $("#st_"+id).html("<img src=i/loader2.gif>");
+                    $("#st_"+id).html("<img src="+curl+"/i/loader2.gif>");
                 },
                 success: function(html){
                     $("#st_"+id).html(html);

@@ -3670,3 +3670,2564 @@ Stack trace:
 REQUEST_URI=/bootstrap/css/main.css
 HTTP_REFERER=http://yii/user/profile
 ---
+2013/10/21 14:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/21 14:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/
+---
+2013/10/21 14:28:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/21 14:28:52 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "users" не содержит столбца "username".' in H:\OpenServer\domains\yii\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`user`.')
+#1 H:\OpenServer\domains\yii\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->findByAttributes(Array)
+#2 H:\OpenServer\domains\yii\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#3 H:\OpenServer\domains\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#4 H:\OpenServer\domains\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#5 H:\OpenServer\domains\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#6 H:\OpenServer\domains\yii\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#7 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#8 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 H:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#13 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/user/login
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/21 14:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/21 14:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/21 14:31:48 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'track.users' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `users`.
+in H:\OpenServer\domains\yii\protected\modules\user\components\UserIdentity.php (27)
+in H:\OpenServer\domains\yii\protected\modules\user\components\UserIdentity.php (27)
+in H:\OpenServer\domains\yii\protected\modules\user\models\UserLogin.php (52)
+2013/10/21 14:31:48 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "{{users}}", упомянутая в записи active record класса "User", не найдена в базе данных.' in H:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(User))
+#1 H:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(212): CActiveRecord->getMetaData()
+#2 H:\OpenServer\domains\yii\protected\modules\user\components\UserIdentity.php(27): CActiveRecord->__call('notsafe', Array)
+#3 H:\OpenServer\domains\yii\protected\modules\user\components\UserIdentity.php(27): User->notsafe()
+#4 H:\OpenServer\domains\yii\protected\modules\user\models\UserLogin.php(52): UserIdentity->authenticate()
+#5 H:\OpenServer\domains\yii\framework\validators\CInlineValidator.php(42): UserLogin->authenticate('password', Array)
+#6 H:\OpenServer\domains\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#7 H:\OpenServer\domains\yii\framework\base\CModel.php(159): CValidator->validate(Object(UserLogin), NULL)
+#8 H:\OpenServer\domains\yii\protected\modules\user\controllers\LoginController.php(19): CModel->validate()
+#9 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): LoginController->actionLogin()
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#15 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/user/login
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/21 14:32:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/21 14:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 14:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/edit
+---
+2013/10/21 14:33:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 14:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:34:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 14:34:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 14:34:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:35:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:35:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 14:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/changepassword
+---
+2013/10/21 14:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/profile
+---
+2013/10/21 14:36:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/21 14:36:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/21 14:36:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/21 14:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 14:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 14:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/edit
+---
+2013/10/21 14:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:41:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:41:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:42:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:43:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:44:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:45:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:45:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:48:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:48:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "track&id=RB184875349CN".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('track&id=RB1848...')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track&id=RB1848...')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track&...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/track&id=RB184875349CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:49:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/products/track
+---
+2013/10/21 14:49:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/track
+---
+2013/10/21 14:49:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/track
+---
+2013/10/21 14:49:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/products/track/
+---
+2013/10/21 14:49:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/track/
+---
+2013/10/21 14:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:49:56 [error] [exception.RussianPostArgumentException] exception 'RussianPostArgumentException' with message 'Incorrect format of tracking number: 1' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:65
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(201): RussianPostAPI->getOperationHistory('1')
+#1 [internal function]: ProductsController->actionTrack('1')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/products/track/1
+---
+2013/10/21 14:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:50:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track/...')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/products/track/RB184875349CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:50:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track/...')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/products/track/RB387935299CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 14:50:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track/...')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/products/track/RB184875349CN
+---
+2013/10/21 14:50:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/track/RB184875349CN
+---
+2013/10/21 14:51:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track/...')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/products/track/RB184875349CN
+---
+2013/10/21 14:51:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/track/RB184875349CN
+---
+2013/10/21 14:51:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in H:\OpenServer\domains\yii\framework\web\CController.php:336
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#9 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track/...')
+#10 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/products/track/RB184875349C
+---
+2013/10/21 14:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/track/RB184875349C
+---
+2013/10/21 14:51:25 [error] [exception.RussianPostArgumentException] exception 'RussianPostArgumentException' with message 'Incorrect format of tracking number: 22' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:65
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(201): RussianPostAPI->getOperationHistory('22')
+#1 [internal function]: ProductsController->actionTrack('22')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/products/track/22
+---
+2013/10/21 14:52:37 [error] [exception.RussianPostArgumentException] exception 'RussianPostArgumentException' with message 'Incorrect format of tracking number: 22' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:65
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(201): RussianPostAPI->getOperationHistory('22')
+#1 [internal function]: ProductsController->actionTrack('22')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/products/track/22
+---
+2013/10/21 14:52:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/track/RB184875349CN
+---
+2013/10/21 14:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:55:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.php".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/index....')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/index.php?r=products/checkurl
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:55:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "i".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('i')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('i')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/i/6562...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/i/656297.gif
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:56:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "i".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('i')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('i')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/i/6562...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/i/656297.gif
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:56:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/t...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/test.jpg
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 14:59:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:01:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:02:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:02:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:02:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:04:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:10:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:10:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:11:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:11:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/21 15:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:12:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 15:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/admin
+---
+2013/10/21 15:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/admin/update/id/2
+---
+2013/10/21 15:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/admin
+---
+2013/10/21 15:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/user/admin
+---
+2013/10/21 15:24:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/admin
+---
+2013/10/21 15:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:24:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:25:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:26:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:30:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:31:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:31:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/site/index
+---
+2013/10/21 15:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/site/page?view=about
+---
+2013/10/21 15:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 15:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/site/index
+---
+2013/10/21 15:39:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/site/index
+---
+2013/10/21 15:39:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 16:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 16:38:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 17:05:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 17:05:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user
+---
+2013/10/21 17:05:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 17:05:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 17:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/edit
+---
+2013/10/21 17:05:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/edit
+---
+2013/10/21 17:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/edit
+---
+2013/10/21 17:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/edit
+---
+2013/10/21 17:08:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 17:08:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 17:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "track  ".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('track  ')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track  ')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track ...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/track/RB184875349CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 17:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 17:08:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/21 17:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/21 17:08:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user
+---
+2013/10/21 17:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile/edit
+---
+2013/10/22 04:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/22 04:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/
+---
+2013/10/22 04:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/22 04:18:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/22 04:18:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/22 04:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "RB634557885CN".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('RB634557885CN')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('RB634557885CN')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/RB6345...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/RB634557885CN
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/22 04:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/RB634557885CN
+---
+2013/10/22 04:28:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:28:59 [error] [exception.RussianPostDataException] exception 'RussianPostDataException' with message 'There is no tracking data in XML response' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:85
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php(69): RussianPostAPI->parseResponse('<?xml version='...')
+#1 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(202): RussianPostAPI->getOperationHistory('RB634557885CN')
+#2 [internal function]: ProductsController->actionTrack('RB634557885CN')
+#3 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#4 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#5 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#14 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#15 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/products/track/RB634557885CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:30:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:30:52 [error] [exception.RussianPostDataException] exception 'RussianPostDataException' with message 'There is no tracking data in XML response' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:85
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php(69): RussianPostAPI->parseResponse('<?xml version='...')
+#1 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(202): RussianPostAPI->getOperationHistory('RB634557885CN')
+#2 [internal function]: ProductsController->actionTrack('RB634557885CN')
+#3 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#4 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#5 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#14 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#15 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/products/track/RB634557885CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:31:07 [error] [exception.RussianPostDataException] exception 'RussianPostDataException' with message 'There is no tracking data in XML response' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:85
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php(69): RussianPostAPI->parseResponse('<?xml version='...')
+#1 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(202): RussianPostAPI->getOperationHistory('RB634557885CN')
+#2 [internal function]: ProductsController->actionTrack('RB634557885CN')
+#3 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#4 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#5 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#14 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#15 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/products/track/RB634557885CN
+---
+2013/10/22 04:33:39 [error] [exception.RussianPostDataException] exception 'RussianPostDataException' with message 'There is no tracking data in XML response' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:86
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php(70): RussianPostAPI->parseResponse('<?xml version='...')
+#1 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(203): RussianPostAPI->getOperationHistory('RB634557885CN')
+#2 [internal function]: ProductsController->actionTrack('RB634557885CN')
+#3 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#4 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#5 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#14 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#15 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/products/track/RB634557885CN
+---
+2013/10/22 04:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:36:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:40:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php:237
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(55): ProductsController->loadModel('1')
+#1 [internal function]: ProductsController->actionView('1')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/view')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/products/view/1
+---
+2013/10/22 04:40:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/view/1
+---
+2013/10/22 04:40:49 [error] [exception.RussianPostArgumentException] exception 'RussianPostArgumentException' with message 'Incorrect format of tracking number: 1' in H:\OpenServer\domains\yii\protected\extensions\RussianPost\RussianPostAPI.php:65
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(203): RussianPostAPI->getOperationHistory('1')
+#1 [internal function]: ProductsController->actionTrack('1')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('track')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/track')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/products/view/1
+---
+2013/10/22 04:41:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php:237
+Stack trace:
+#0 H:\OpenServer\domains\yii\protected\controllers\ProductsController.php(55): ProductsController->loadModel('1')
+#1 [internal function]: ProductsController->actionView('1')
+#2 H:\OpenServer\domains\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#3 H:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductsController), Object(ReflectionMethod), Array)
+#4 H:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 H:\OpenServer\domains\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 H:\OpenServer\domains\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 H:\OpenServer\domains\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 H:\OpenServer\domains\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 H:\OpenServer\domains\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 H:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/view')
+#14 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/products/view/1
+---
+2013/10/22 04:41:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/view/1
+---
+2013/10/22 04:41:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/view/RB184875349CN
+---
+2013/10/22 04:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 04:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/view/RB184875349CN
+---
+2013/10/22 04:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 05:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/view/RB387935299CN
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB461265625CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB387935299CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB184875349CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "js".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('js')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('js')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/js/tra...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/js/track.js
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB634557885CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB688847642CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB869070087CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB851222096CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "data".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('data')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('data')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/data/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/data/RB786959096CN.jpg
+HTTP_REFERER=http://yii/products/index
+---
+2013/10/22 05:12:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 05:15:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 07:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 09:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/22 09:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/view/RB634557885CN
+---
+2013/10/22 11:23:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/22 11:23:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/
+---
+2013/10/22 11:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/22 11:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:23:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:25:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/activation/activation/activkey/16b350c4a488156f3302f221cf787c5b/email/zeatool%40gmail.com
+---
+2013/10/22 11:25:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/site/index
+---
+2013/10/22 11:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/22 11:25:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/22 11:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/profile
+---
+2013/10/22 11:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/22 11:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/
+---
+2013/10/22 11:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:32:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:37:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:37:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:38:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:38:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/22 11:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/registration
+---
+2013/10/23 04:19:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/23 04:19:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/
+---
+2013/10/23 04:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/23 04:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/user/login
+---
+2013/10/23 04:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/23 04:36:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/23 04:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/view/RB184875349CN
+---
+2013/10/23 04:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "edir".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('edir')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('edir')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/edir/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/edir/RB184875349CN
+---
+2013/10/23 04:52:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/edir/RB184875349CN
+---
+2013/10/23 04:52:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "edit".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('edit')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/edit/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/edit/RB184875349CN
+---
+2013/10/23 04:52:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/edit/RB184875349CN
+---
+2013/10/23 04:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 04:56:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 04:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "checkur".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('checkur')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('checkur')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/checku...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/checkur?code=test&link=http://www.aliexpress.com/snapshot/268037092.html
+---
+2013/10/23 04:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/checkur?code=test&link=http://www.aliexpress.com/snapshot/268037092.html
+---
+2013/10/23 15:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/23 15:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/
+---
+2013/10/23 15:54:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 15:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:00:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:04:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:24:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/23 16:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/
+---
+2013/10/23 16:24:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:24:36 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:24:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:26:33 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:26:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:27:27 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:27:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:28:00 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:28:40 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:28:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:29:01 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:29:14 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:29:43 [warning] [application] Не удалось присвоить небезопасный атрибут "store_id" класса "Products".
+in H:\OpenServer\domains\yii\protected\controllers\ProductsController.php (72)
+in H:\OpenServer\domains\yii\index.php (13)
+2013/10/23 16:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 16:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl/?code=test&link=http://www.aliexpress.com/snapshot/282129867.html
+---
+2013/10/23 16:41:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl/?code=test&link=http://www.aliexpress.com/snapshot/282129867.html
+---
+2013/10/23 16:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl/?code=test&link=http://www.aliexpress.com/snapshot/282129867.html
+---
+2013/10/23 16:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl/?code=test&link=http://www.aliexpress.com/snapshot/282129867.html
+---
+2013/10/23 16:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl/?code=test&link=http://www.aliexpress.com/snapshot/282129867.html
+---
+2013/10/23 17:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl/?code=test&link=http://www.aliexpress.com/snapshot/282129867.html
+---
+2013/10/23 17:12:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/23 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 17:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 17:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 17:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 17:16:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl/?code=test&link=http://www.aliexpress.com/snapshot/282129867.html
+---
+2013/10/23 17:17:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/23 17:17:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/23 17:18:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/create
+---
+2013/10/24 03:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://yii/products/checkurl?code=test&link=http://www.aliexpress.com/snapshot/268037092.html
+---
+2013/10/24 05:46:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/
+---
+2013/10/24 05:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/24 05:46:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/24 05:48:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/24 05:49:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/24 05:49:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "RB184875349CN".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('RB184875349CN')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/RB184875349CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/24 05:49:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/RB184875349CN
+---
+2013/10/24 05:49:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products
+---
+2013/10/24 05:49:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "edit".' in H:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('edit')
+#1 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#2 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('products/edit/R...')
+#3 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/products/edit/RB184875349CN
+HTTP_REFERER=http://yii/products
+---
+2013/10/24 05:49:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "bootstrap/css/main.css".' in H:\OpenServer\domains\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('bootstrap/css/m...')
+#1 H:\OpenServer\domains\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/bootstrap/css/main.css
+HTTP_REFERER=http://yii/products/edit/RB184875349CN
+---

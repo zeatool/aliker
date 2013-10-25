@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 );
 
 ?>
-<script src="js/track.js"></script>
+<script src="<?php print Yii::app()->getBaseUrl(); ?>/js/track.js"></script>
 <script>
     $(document).ready(function(){
         $(".popover_img").popover({

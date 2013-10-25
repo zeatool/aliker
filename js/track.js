@@ -6,7 +6,7 @@ function disable_track(track_id)
         {
             $.ajax({
                 type:"GET",
-                url: "index.php?r=products/disable&id="+track_id,
+                url: curl+"/products/disable/?id="+track_id,
                 success: function(data){
                     $("#tr_"+track_id).hide();
                 }

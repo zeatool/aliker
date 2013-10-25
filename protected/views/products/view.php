@@ -27,6 +27,7 @@ $this->menu=array(
 		'link',
 		'date_upd',
 		'last_state',
+        'store_id',
 		'disabled',
 	),
 )); ?>
