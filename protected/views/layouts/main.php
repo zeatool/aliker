@@ -79,7 +79,7 @@
                                     )
                                 ),
                                 array('label'=>'Магазины', 'icon'=>'briefcase', 'url'=>array('/store'), 'visible'=>!Yii::app()->user->isGuest),
-                                array('label'=>'Как пользоваться', 'icon'=>'help','url'=>array('/site/help', 'view'=>'help')),
+                                array('label'=>'Как пользоваться', 'icon'=>'info-sign','url'=>array('/site/help', 'view'=>'help')),
                                 array('label'=>'О проекте', 'url'=>array('/site/page', 'view'=>'about')),
                             )
                         )); ?>

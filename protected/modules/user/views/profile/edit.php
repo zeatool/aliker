@@ -20,7 +20,7 @@ $this->menu=array(
 </div>
 <?php endif; ?>
 <div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
+<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
 	'id'=>'profile-form',
 	'enableAjaxValidation'=>true,
 	'htmlOptions' => array('enctype'=>'multipart/form-data'),
@@ -64,6 +64,11 @@ $this->menu=array(
 		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
+
+    <div class="row">
+        <?php echo $form->textFieldRow($model,'phone',array('size'=>10,'maxlength'=>10,'prepend'=>'+7','class'=>'span2')); ?>
+        <?php echo $form->error($model,'phone'); ?>
+    </div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Create') : UserModule::t('Save')); ?>

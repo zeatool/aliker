@@ -16,7 +16,13 @@ $this->breadcrumbs=array(
         });
     });
 </script>
-
+<?php $this->widget('bootstrap.widgets.TbButtonGroup', array(
+    'toggle' => 'radio', // 'checkbox' or 'radio'
+    'buttons' => array(
+        array('label'=>'Активные',"url"=>Yii::app()->createUrl("/products/"),"active"=>!intval($_GET['disabled'])),
+        array('label'=>'Завершенные',"url"=>Yii::app()->createUrl("/products/?disabled=1"),"active"=>(bool)intval($_GET['disabled'])),
+    ),
+)); ?>
 <h1>Ваши товары</h1>
 <table class="table  table-hover">
     <tr>
@@ -27,7 +33,7 @@ $this->breadcrumbs=array(
         <th>Дата обновления</th>
     </tr>
 <?php
-$this->widget('zii.widgets.CListView', array(
+$this->widget('bootstrap.widgets.TBListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
     'template'=>"{items}\n{pager}",

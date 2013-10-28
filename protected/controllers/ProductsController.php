@@ -128,8 +128,9 @@ class ProductsController extends Controller
 	 */
 	public function actionIndex()
 	{
+         $disabled = intval($_GET['disabled']);
          $criteria=new CDbCriteria(array(
-            'condition'=>'disabled=0 AND user_id='.Yii::app()->user->user_id
+            'condition'=>'disabled='.$disabled.' AND user_id='.Yii::app()->user->user_id
          ));
 
 		$dataProvider=new CActiveDataProvider('Products',

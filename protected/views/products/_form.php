@@ -35,13 +35,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'track_id'); ?>
-		<?php echo $form->textField($model,'track_id',array('size'=>16,'maxlength'=>16)); ?>
+		<?php echo $form->textField($model,'track_id',array('class'=>'span2','size'=>16,'maxlength'=>16,'placeholder'=>'RB12345678CN')); ?>
 		<?php echo $form->error($model,'track_id'); ?>
 	</div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'link'); ?>
-        <?php echo $form->textField($model,'link',array('size'=>60,'maxlength'=>255)); ?>
+        <?php echo $form->textField($model,'link',array('class'=>'span4','size'=>60,'maxlength'=>255,'placeholder'=>'http://www.aliexpress.com/snapshot/XXXXXX.html')); ?>
         <a href="#" class="btn" onclick="check();"><i class="icon-refresh" title="Получить данные с али"></i></a>
         <?php echo $form->error($model,'link'); ?>
     </div>

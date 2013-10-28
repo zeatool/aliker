@@ -69,6 +69,7 @@ class User extends CActiveRecord
 			array('username', 'unique', 'message' => UserModule::t("This user's name already exists.")),
 			array('username', 'match', 'pattern' => '/^[A-Za-z0-9_]+$/u','message' => UserModule::t("Incorrect symbols (A-z0-9).")),
 			array('email', 'unique', 'message' => UserModule::t("This user's email address already exists.")),
+            array('phone','length','max'=>10,'min'=>10),
 		):array()));
 	}
 
@@ -98,7 +99,7 @@ class User extends CActiveRecord
 			'activkey' => UserModule::t("Код активации"),
 			'createtime' => UserModule::t("Дата регистрации"),
 			'create_at' => UserModule::t("Дата регистрации"),
-			
+			'phone' => 'Телефон',
 			'lastvisit_at' => UserModule::t("Последнее посещение"),
 			'superuser' => UserModule::t("Superuser"),
 			'status' => UserModule::t("Статус"),
@@ -121,7 +122,7 @@ class User extends CActiveRecord
                 'condition'=>'superuser=1',
             ),
             'notsafe'=>array(
-            	'select' => 'id, username, password, email, activkey, create_at, lastvisit_at, superuser, status',
+            	'select' => 'id, username, password, email, activkey, create_at, lastvisit_at, superuser, status, phone',
             ),
         );
     }
@@ -130,7 +131,7 @@ class User extends CActiveRecord
     {
         return CMap::mergeArray(Yii::app()->getModule('user')->defaultScope,array(
             'alias'=>'user',
-            'select' => 'user.id, user.username, user.email, user.create_at, user.lastvisit_at, user.superuser, user.status',
+            'select' => 'user.id, user.username, user.email, user.create_at, user.lastvisit_at, user.superuser, user.status, user.phone',
         ));
     }
 	

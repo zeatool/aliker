@@ -39,10 +39,11 @@ class ProfileController extends Controller
 		}
 		
 		if(isset($_POST['User']))
-		{
-			$model->attributes=$_POST['User'];
-			$profile->attributes=$_POST['Profile'];
-			
+		{   $model->attributes=$_POST['User'];
+            // Хуле
+            $model->phone=trim($_POST['User']['phone']);
+            $profile->attributes=$_POST['Profile'];
+
 			if($model->validate()&&$profile->validate()) {
 				$model->save();
 				$profile->save();
