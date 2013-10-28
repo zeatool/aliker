@@ -102,6 +102,11 @@ class SiteController extends Controller
     {
         $this->render('register');
     }
+
+    public function actionHelp()
+    {
+        $this->render('help');
+    }
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */

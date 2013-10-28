@@ -79,6 +79,7 @@
                                     )
                                 ),
                                 array('label'=>'Магазины', 'icon'=>'briefcase', 'url'=>array('/store'), 'visible'=>!Yii::app()->user->isGuest),
+                                array('label'=>'Как пользоваться', 'icon'=>'help','url'=>array('/site/help', 'view'=>'help')),
                                 array('label'=>'О проекте', 'url'=>array('/site/page', 'view'=>'about')),
                             )
                         )); ?>
@@ -117,7 +118,21 @@
 
 <div id="footer">
     <div class="container">
-        <p>Отслеживание товаров с Aliexpress. &copy; Aliker.ru, <?php print date('Y'); ?> </p>
+        <div style="float:left;">
+        <!--LiveInternet counter--><script type="text/javascript"><!--
+            document.write("<a href='http://www.liveinternet.ru/click' "+
+                "target=_blank><img src='//counter.yadro.ru/hit?t25.2;r"+
+                escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                    screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                ";"+Math.random()+
+                "' alt='' title='LiveInternet: РїРѕРєР°Р·Р°РЅРѕ С‡РёСЃР»Рѕ РїРѕСЃРµС‚РёС‚РµР»РµР№ Р·Р°"+
+                " СЃРµРіРѕРґРЅСЏ' "+
+                "border='0' width='88' height='15'><\/a>")
+            //--></script><!--/LiveInternet-->
+    </div>
+
+    <p>Отслеживание товаров с Aliexpress. &copy; Aliker.ru, <?php print date('Y'); ?> </p>
     </div>
 </div>
 

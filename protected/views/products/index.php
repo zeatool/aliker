@@ -16,6 +16,7 @@ $this->breadcrumbs=array(
         });
     });
 </script>
+
 <h1>Ваши товары</h1>
 <table class="table  table-hover">
     <tr>
