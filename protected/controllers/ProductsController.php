@@ -56,6 +56,59 @@ class ProductsController extends Controller
 		));
 	}
 
+    private function CheckUrl($link,$code,$it_save=false)
+    {
+        Yii::import('ext.SimpleHTMLDOM.SimpleHTMLDOM');
+        $simpleHTML = new SimpleHTMLDOM();
+
+        $ret = array();
+
+        $html = $simpleHTML->file_get_html($link);
+        $title=$html->find("#product-name",0);
+
+        $ret['title']=trim($title->plaintext);
+
+        $img_div = $html->find('#img',0);
+        $img = $img_div->find('img',0);
+        $img_src = str_replace('.summ','',$img->attr['src']);
+
+        if(!$img_src)
+        {
+            preg_match("/MAIN_BIG_PIC='(.*)';/",$html,$tmp);
+            $img_src=trim(substr($tmp[1],0,strpos($tmp[1],'//]]')));
+            $img_src=str_replace("';",'',$img_src);
+        }
+
+        $local_src='data/'.$code.'.jpg';
+        file_put_contents($local_src,file_get_contents($img_src));
+        $ret['img']=$local_src;
+
+        if (!$it_save) return $ret;
+
+        // Пробьем инфу по магазу :)
+        $store_link = $html->find('.company-name',0);
+        if ($store_link)
+        {
+            $store_link = $store_link->find('a',0);
+            $ret['title_store']=trim($store_link->plaintext);
+            $ret['link']=trim($store_link->href);
+            $ret['id']=intval(str_replace('http://www.aliexpress.com/store/','',$store_link->href));
+
+            $store = Store::model()->findByPk($ret['id']);
+            if ($store==null)
+            {
+                $store = new Store();
+                $store->id = $ret['id'];
+                $store->title = $ret['title_store'];
+                $store->link = $ret['link'];
+                $store->save(false);
+            }
+        }
+
+    }
+
+
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.

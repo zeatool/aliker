@@ -109,7 +109,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=track',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => '603548',
 			'charset' => 'utf8',
 		),
 
