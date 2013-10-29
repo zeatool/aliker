@@ -33,7 +33,7 @@ $this->breadcrumbs=array(
         <th>Дата обновления</th>
     </tr>
 <?php
-$this->widget('bootstrap.widgets.TBListView', array(
+$this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
     'template'=>"{items}\n{pager}",

@@ -5,6 +5,12 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Console Application',
+    'import'=>array(
+        'application.models.*',
+        'application.components.*',
+        'application.modules.user.models.*',
+        'application.modules.user.components.*',
+    ),
     'modules'=>array(
         #...
         'user'=>array(
@@ -44,9 +50,14 @@ return array(
 
 	// application components
 	'components'=>array(
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+        'db'=>array(
+            'tablePrefix'=>'',
+            'connectionString' => 'mysql:host=localhost;dbname=track',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+        ),
 		// uncomment the following to use a MySQL database
 		/*
 		'db'=>array(
