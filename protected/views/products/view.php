@@ -3,16 +3,13 @@
 /* @var $model Products */
 
 $this->breadcrumbs=array(
-	'Products'=>array('index'),
-	$model->title,
+	'Треки'=>array('index'),
+	$model->track_id,
 );
-
+if (!$model->img) $model->img="i/no_image.png";
 $this->menu=array(
-	array('label'=>'List Products', 'url'=>array('index')),
-	array('label'=>'Create Products', 'url'=>array('create')),
-	array('label'=>'Update Products', 'url'=>array('update', 'id'=>$model->track_id)),
-	array('label'=>'Delete Products', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->track_id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Products', 'url'=>array('admin')),
+	array('label'=>'Изменить трек', 'url'=>array('update', 'id'=>$model->track_id)),
+	array('label'=>'Удалить трек', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->track_id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 <style>
@@ -35,9 +32,9 @@ $this->widget('bootstrap.widgets.TbDetailView', array(
             'type'=>'raw',
             'value'=>$store,
         ),
-		'link',
+		'link:url',
 		'date_upd',
-		'last_state',
+		'last_state:html',
 	),
 )); ?>
 </div>

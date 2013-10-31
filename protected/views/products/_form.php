@@ -13,7 +13,7 @@
             beforeSend: function(){$('#img_div').html("<img width=200 src='"+curl+"/i/656297.gif'>");},
             success: function(data){
                 $('#Products_title').val(data.title);
-                $('#img_div').html("<img width=200 src='"+curl+'/'+data.img+"'>");
+                $('#img_div').html("<img width=200 src='"+data.img+"'>");
                 if (data.id)
                     $('#store_id').val(data.id);
             }
@@ -47,7 +47,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'title',array('class'=>'span3','size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 

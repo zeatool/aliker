@@ -23,7 +23,9 @@ $this->breadcrumbs=array(
         array('label'=>'Завершенные',"url"=>Yii::app()->createUrl("/products/?disabled=1"),"active"=>(bool)intval($_GET['disabled'])),
     ),
 )); ?>
-<h1>Ваши товары</h1>
+<?php if ($dataProvider->itemCount)
+{?>
+<h1>Ваши треки</h1>
 <table class="table  table-hover">
     <tr>
         <th>TrackID</th>
@@ -38,5 +40,8 @@ $this->widget('zii.widgets.CListView', array(
 	'itemView'=>'_view',
     'template'=>"{items}\n{pager}",
 ));
+}else{
+    print CHtml::image(Yii::app()->createURL("/i/no_track.png"));
+}
 ?>
 </table>
