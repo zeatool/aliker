@@ -89,6 +89,7 @@ return array(
 			'urlFormat'=>'path',
             'showScriptName'=>false,
 			'rules'=>array(
+                'products/edit/<id:\w+>'=>'products/update',
                 'products/view/<id:\w+>'=>'products/view',
                 'products/track/<id:\w+>'=>'products/track',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
@@ -109,7 +110,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=track',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '603548',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 

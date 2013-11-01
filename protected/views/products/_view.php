@@ -2,7 +2,7 @@
 /* @var $this ProductsController */
 /* @var $data Products */
 $tid = $data->track_id;
-
+if (!$data->img) $data->img="i/no_image.png";
 ?>
 
 <TR id="tr_<?php print $tid ?>">
@@ -19,7 +19,12 @@ $tid = $data->track_id;
     <TD>
         <?php print CHtml::image(Yii::app()->getBaseUrl()."/".$data->img,'',array("width"=>100,"class"=>"popover_img","data-content"=>CHtml::image(Yii::app()->getBaseUrl()."/".$data->img))); ?>
     </TD>
-    <TD><?php echo CHtml::link(CHtml::encode($data->title), $data->link,array("target"=>"_blank")); ?></TD>
+    <TD><?php
+        if($data->link)
+            echo CHtml::link(CHtml::encode($data->title), $data->link,array("target"=>"_blank"));
+        else
+            echo CHtml::encode($data->title);
+        ?></TD>
     <TD><div id='st_<?php echo $data->track_id?>'><?php echo $data->last_state; ?></div></TD>
     <TD><?php echo CHtml::encode($data->date_upd); ?></TD>
 </TR>

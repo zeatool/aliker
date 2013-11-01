@@ -79,11 +79,15 @@ class ProductsController extends Controller
             $img_src=str_replace("';",'',$img_src);
         }
 
+        if (!$it_save)
+        {
+            $ret['img']=$img_src;
+            return $ret;
+        }
+
         $local_src='data/'.$code.'.jpg';
         file_put_contents($local_src,file_get_contents($img_src));
         $ret['img']=$local_src;
-
-        if (!$it_save) return $ret;
 
         // Пробьем инфу по магазу :)
         $store_link = $html->find('.company-name',0);
@@ -105,6 +109,7 @@ class ProductsController extends Controller
             }
         }
 
+        return $ret;
     }
 
 
@@ -125,6 +130,13 @@ class ProductsController extends Controller
 			$model->attributes=$_POST['Products'];
             $model->store_id = $_POST['Products']['store_id'];
             $model->user_id=Yii::app()->user->user_id;
+            // Если заполнена ссылка, то можно все побыстрому спарсить
+            if ($model->link)
+            {
+                $ret = $this->CheckUrl($model->link,$model->track_id,true);
+                $model->store_id=$ret['id'];
+                $model->img=$ret['img'];
+            }
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->track_id));
@@ -152,6 +164,13 @@ class ProductsController extends Controller
 			$model->attributes=$_POST['Products'];
             if ($_POST['Products']['store_id'])
                 $model->store_id = $_POST['Products']['store_id'];
+            // Если пользователь решил добавтиь ссылку, то надо все спарсить за него :)
+            if ($_POST['Products']['link'] && !strcmp(trim($_POST['Products']['link']),$model->link))
+            {
+                $ret = $this->CheckUrl(trim($_POST['Products']['link']),$model->track_id,true);
+                $model->store_id=$ret['id'];
+                $model->img=$ret['img'];
+            }
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->track_id));
@@ -222,53 +241,9 @@ class ProductsController extends Controller
     // Получение инфы о товаре с страницы на алиэкспресс :)
     public function actionCheckURL()
     {
-        Yii::import('ext.SimpleHTMLDOM.SimpleHTMLDOM');
-        $simpleHTML = new SimpleHTMLDOM();
         $link = trim($_REQUEST['link']);
         $code = trim($_REQUEST['code']);
-        $ret = array();
-
-        $html = $simpleHTML->file_get_html($link);
-        $title=$html->find("#product-name",0);
-
-        $ret['title']=trim($title->plaintext);
-
-        $img_div = $html->find('#img',0);
-        $img = $img_div->find('img',0);
-        $img_src = str_replace('.summ','',$img->attr['src']);
-
-        if(!$img_src)
-        {
-            //@eregi("MAIN_BIG_PIC='(.*)'; ",$html,$tmp);
-            preg_match("/MAIN_BIG_PIC='(.*)';/",$html,$tmp);
-            $img_src=trim(substr($tmp[1],0,strpos($tmp[1],'//]]')));
-            $img_src=str_replace("';",'',$img_src);
-            // print $img_src;
-        }
-
-        $local_src='data/'.$code.'.jpg';
-        file_put_contents($local_src,file_get_contents($img_src));
-        $ret['img']=$local_src;
-
-       // Пробьем инфу по магазу :)
-        $store_link = $html->find('.company-name',0);
-        if ($store_link)
-        {
-            $store_link = $store_link->find('a',0);
-            $ret['title_store']=trim($store_link->plaintext);
-            $ret['link']=trim($store_link->href);
-            $ret['id']=intval(str_replace('http://www.aliexpress.com/store/','',$store_link->href));
-
-            $store = Store::model()->findByPk($ret['id']);
-            if ($store==null)
-            {
-                $store = new Store();
-                $store->id = $ret['id'];
-                $store->title = $ret['title_store'];
-                $store->link = $ret['link'];
-                $store->save(false);
-            }
-        }
+        $ret = $this->CheckUrl($link,$code);
 
         echo json_encode($ret);
     }

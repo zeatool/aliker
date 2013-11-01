@@ -41,7 +41,7 @@
 
             <?php $this->widget('bootstrap.widgets.TbMenu',array(
                 'items'=>array(
-                    array('label'=>Yii::app()->user->name,'icon'=>'user white', 'url'=>array('/products'), 'visible'=>!Yii::app()->user->isGuest,'class'=>'btn',
+                    array('label'=>Yii::app()->user->name,'icon'=>'user white', 'url'=>array('/'), 'visible'=>!Yii::app()->user->isGuest,'class'=>'btn',
                     'items'=>array(
                         array('label'=>'Информация','url'=>'/user/profile'),
                         '---',
