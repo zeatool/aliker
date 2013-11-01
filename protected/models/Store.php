@@ -10,7 +10,7 @@
  */
 class Store extends CActiveRecord
 {
-	/**
+ 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
@@ -43,6 +43,7 @@ class Store extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            'trackCount'=>array(self::STAT,'Products','store_id'),// Количество треков у данного магазина
 		);
 	}
 
@@ -55,6 +56,7 @@ class Store extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Название магазина',
 			'link' => 'Ссылка',
+            'trackCount' => 'Треки',
 		);
 	}
 
