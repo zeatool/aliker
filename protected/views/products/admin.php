@@ -25,8 +25,12 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-
-<h1>Manage Products</h1>
+<style>
+#products-grid input{
+    max-width: 150px;
+}
+</style>
+<h1>Управление треками</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -40,9 +44,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php $this->widget('bootstrap.widgets.TbGridView', array(
 	'id'=>'products-grid',
-	'dataProvider'=>$model->search(),
+    'type'=>'striped bordered condensed',
+    'template'=>"{items}",
+    'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
 		'track_id',
@@ -50,12 +56,15 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'img',
 		'link',
 		'date_upd',
-		'last_state',
-		/*
-		'disabled',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
+		'last_state:html',
+        array(
+            'name' => 'user',
+            'value'=> '$data->user->username',),            /*
+            'disabled',
+            */
+        array(
+            'class'=>'bootstrap.widgets.TbButtonColumn',
+            'htmlOptions'=>array('style'=>'width: 50px'),
+        ),
 	),
 )); ?>

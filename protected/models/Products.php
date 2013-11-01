@@ -52,6 +52,7 @@ class Products extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
             'store' => array(self::BELONGS_TO,'Store','store_id'),
+            'user' => array(self::BELONGS_TO,'Users','user_id'),
 		);
 	}
 
