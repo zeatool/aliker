@@ -13,7 +13,7 @@
             beforeSend: function(){$('#img_div').html("<img width=200 src='"+curl+"/i/656297.gif'>");},
             success: function(data){
                 $('#Products_title').val(data.title);
-                $('#img_div').html("<img width=200 src='"+curl+'/'+data.img+"'>");
+                $('#img_div').html("<img width=200 src='"+data.img+"'>");
                 if (data.id)
                     $('#store_id').val(data.id);
             }
