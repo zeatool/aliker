@@ -51,8 +51,12 @@ class ProductsController extends Controller
 	 */
 	public function actionView($id)
 	{
+        $model = $this->loadModel($id);
+            // Порадуем Юльку пандой :)
+        if (strpos($model->last_state,'Красноярск'))
+            $model->last_state .= "<BR><img src='".Yii::app()->createUrl('i/dance.gif')."'>";
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 		));
 	}
 

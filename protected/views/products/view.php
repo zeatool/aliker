@@ -11,6 +11,7 @@ $this->menu=array(
 	array('label'=>'Изменить трек', 'url'=>array('update', 'id'=>$model->track_id)),
 	array('label'=>'Удалить трек', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->track_id),'confirm'=>'Are you sure you want to delete this item?')),
 );
+
 ?>
 <style>
     .product_img{float:left;}
