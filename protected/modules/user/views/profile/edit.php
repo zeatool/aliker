@@ -37,15 +37,18 @@ $this->menu=array(
 			?>
 	<div class="row">
 		<?php echo $form->labelEx($profile,$field->varname);
-		
+
 		if ($widgetEdit = $field->widgetEdit($profile)) {
 			echo $widgetEdit;
 		} elseif ($field->range) {
 			echo $form->dropDownList($profile,$field->varname,Profile::range($field->range));
 		} elseif ($field->field_type=="TEXT") {
 			echo $form->textArea($profile,$field->varname,array('rows'=>6, 'cols'=>50));
-		} else {
+		} elseif ($field->field_type=='INTEGER' && $field->field_size=='1'){
+            echo $form->checkBox($profile,$field->varname,array());
+        } else {
 			echo $form->textField($profile,$field->varname,array('size'=>60,'maxlength'=>(($field->field_size)?$field->field_size:255)));
+
 		}
 		echo $form->error($profile,$field->varname); ?>
 	</div>	

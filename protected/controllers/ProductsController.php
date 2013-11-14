@@ -143,8 +143,13 @@ class ProductsController extends Controller
             }
 
 			if($model->save())
+            {
+                $this->actionTrack($model->track_id,false);
 				$this->redirect(array('view','id'=>$model->track_id));
+            }
 		}
+
+
 
 		$this->render('create',array(
 			'model'=>$model,
@@ -253,7 +258,7 @@ class ProductsController extends Controller
     }
 
     // Трекинг посылки
-    public function actionTrack($id)
+    public function actionTrack($id,$print_state=true)
     {
         //error_reporting(E_ALL);
         Yii::import('ext.RussianPost.RussianPostAPI');
@@ -275,14 +280,17 @@ class ProductsController extends Controller
         $model->last_state=$stat;
         $model->save();
 
-        if(strpos($stat,'Красноярск'))
+        if($print_state)
         {
-            if (strpos($stat,'Прибыло в место вручения'))
-                $stat.= "<br><img src='i/panda1.gif'>";
-            else
-                $stat.= "<br><img src='i/dance.gif'>";
-        }
+            if(strpos($stat,'Красноярск'))
+            {
+                if (strpos($stat,'Прибыло в место вручения'))
+                    $stat.= "<br><img src='i/panda1.gif'>";
+                else
+                    $stat.= "<br><img src='i/dance.gif'>";
+            }
         print $stat;
+        }
     }
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

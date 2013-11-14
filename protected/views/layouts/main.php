@@ -44,6 +44,7 @@
                     array('label'=>Yii::app()->user->name,'icon'=>'user white', 'url'=>array('/'), 'visible'=>!Yii::app()->user->isGuest,'class'=>'btn',
                     'items'=>array(
                         array('label'=>'Информация','url'=>'/user/profile'),
+                        array('label'=>'Настройки','url'=>'/user/profile/edit'),
                         '---',
                         array('label'=>'Выйти','url'=>array('/site/logout')),
                     )),
