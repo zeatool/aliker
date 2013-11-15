@@ -43,7 +43,7 @@ class ProfileController extends Controller
             // Хуле
             $model->phone=trim($_POST['User']['phone']);
             $profile->attributes=$_POST['Profile'];
-
+            //var_dump($_POST['Profile']);
 			if($model->validate()&&$profile->validate()) {
 				$model->save();
 				$profile->save();

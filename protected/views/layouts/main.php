@@ -44,6 +44,7 @@
                     array('label'=>Yii::app()->user->name,'icon'=>'user white', 'url'=>array('/'), 'visible'=>!Yii::app()->user->isGuest,'class'=>'btn',
                     'items'=>array(
                         array('label'=>'Информация','url'=>'/user/profile'),
+                        array('label'=>'Настройки','url'=>'/user/profile/edit'),
                         '---',
                         array('label'=>'Выйти','url'=>array('/site/logout')),
                     )),
@@ -66,7 +67,6 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-
                     <div class="nav-collapse">
 
                         <?php $this->widget('bootstrap.widgets.TbMenu',array(
