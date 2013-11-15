@@ -15,7 +15,7 @@ $this->menu=array(
 );
 ?>
 <h1><?php echo UserModule::t('View User').' "'.$model->username.'"'; ?></h1>
-
+<div class="span5">
 <?php
  
 	$attributes = array(
@@ -51,10 +51,30 @@ $this->menu=array(
 		)
 	);
 	
-	$this->widget('zii.widgets.CDetailView', array(
+	$this->widget('bootstrap.widgets.TbDetailView', array(
 		'data'=>$model,
 		'attributes'=>$attributes,
 	));
-	
-
 ?>
+</div>
+<div class="span5">
+    <div class="slate">
+        <div class="page-header">
+            <h2><i class="icon-shopping-cart pull-right"></i>Активные треки (<?php print sizeof($tracks); ?>)</h2>
+        </div>
+        <table class="orders-table table">
+            <tbody>
+            <?php
+                foreach ($tracks as $track)
+                {?>
+                    <tr>
+                        <td><?php print Chtml::link($track->track_id,Yii::app()->createUrl('/products/view/'.$track->track_id)) ?></td>
+                        <td><?php print $track->last_state ?></td>
+                    </tr>
+            <?php
+                }?>
+            </tbody>
+        </table>
+
+    </div>
+</div>

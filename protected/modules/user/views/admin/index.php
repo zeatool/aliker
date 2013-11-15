@@ -68,6 +68,7 @@ $('.search-form form').submit(function(){
 			'value'=>'User::itemAlias("UserStatus",$data->status)',
 			'filter' => User::itemAlias("UserStatus"),
 		),
+        'trackCount',
 		array(
 			'class'=>'CButtonColumn',
 		),

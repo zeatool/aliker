@@ -77,3 +77,19 @@
 #img_div{
     margin-left: 10px;
 }
+.slate {
+    background: #F8F8F8;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px rgba(186, 186, 186, 0.400);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+.orders-table
+{
+    font-size: 12px;
+}
+.slate .page-header {
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
