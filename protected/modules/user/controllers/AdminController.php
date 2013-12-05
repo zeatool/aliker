@@ -64,7 +64,7 @@ class AdminController extends Controller
 	public function actionView()
 	{
 		$model = $this->loadModel();
-        $tracks=Products::model()->findAll('disabled=0 AND user_id='.Yii::app()->user->user_id);
+        $tracks=Products::model()->findAll('disabled=0 AND user_id='.$model->id);
 		$this->render('view',array(
 			'model'=>$model,
             'tracks'=>$tracks

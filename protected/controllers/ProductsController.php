@@ -262,7 +262,8 @@ class ProductsController extends Controller
     {
         //error_reporting(E_ALL);
         Yii::import('ext.RussianPost.RussianPostAPI');
-        $client = new RussianPostAPI('srv-proxy','8080','baranov-rp','111');
+       /// $client = new RussianPostAPI('srv-proxy','8080','baranov-rp','111');
+        $client = new RussianPostAPI();
         $code = trim($id);
 
 
